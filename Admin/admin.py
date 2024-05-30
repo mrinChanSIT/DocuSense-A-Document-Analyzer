@@ -68,10 +68,6 @@ def main():
 
         #split text
         chunkified_docs = chunkify_text(pages,1000,200)
-        st.write(f"no. of chunks: {len(chunkified_docs)}")
-        st.write("=============================================")
-        st.write(chunkified_docs[0])
-        st.write("=============================================")
 
         # create vector store
         st.write("creating the Vector embedding store")
